@@ -1,0 +1,245 @@
+
+
+body {
+	/*background-color: powderblue;*/
+	background-image: url('src/pattern.jpg'); 
+	padding: 40px; /*padding for backgrounf image*/
+}
+
+h1 {
+	/*color: black;*/
+	font-family: Times New Roman
+}
+
+h3 {
+	/*color: black;*/
+	font-family: Times New Roman
+}
+
+
+p {
+	/*color: black;*/
+	font-family: Times New Roman
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1500px;
+	min-height: 1000px; /* changes height of both containers*/
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0,0,0,0.1); /* allows 2 seperate columns*/
+}
+
+	/* ----------------------left Side----------------------*/
+
+.container .left_side {
+	position: relative; 
+	background: #003147; /* Blue */
+	padding: 40px; /* padding from screen*/
+	color: white;
+	font-family: Times New Roman;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.left_side .img_box{ /* makeing circle*/
+
+	position: relative;
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+
+.left_side .img_box img { /* for image in circle*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /*make image fit */
+}
+
+.left_side .profile_text {
+	color: white;
+	position: relative;
+}
+
+.profile_text h1 {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding-bottom: 0px;
+	margin: 15px; /*fix gap between texts*/
+	text-align: center;
+	position: relative;
+}
+
+.profile_text h3 {
+	color: lightgrey;
+	opacity: 0.5;
+	font-size: 90%;
+	padding-top: 0px;
+	margin: 0; /*fix gap between texts*/
+	text-align: center;
+	position: relative;
+}
+
+
+.left_side .supporting_text {
+	color: lightgrey;
+	opacity: 0.5;
+	font-size: 90%;
+	position: relative;
+}
+
+.left_side .education_text {
+	color: white;
+	margin: 0;
+	text-align: left;
+	position: relative;
+}
+
+.education_text h1 {
+	margin: 15px; /*fix gap between texts*/
+	text-align: left;
+	position: relative;
+}
+
+
+
+
+.education_text h4 {
+	color: lightgrey;
+	opacity: 0.5;
+	font-size: 90%;
+	position: relative;
+}
+
+.left_side .skill_text {
+	color: white;
+	margin: 0;
+	position: relative;
+}
+
+.skill_text h1 {
+	margin: 10px; /*fix gap between texts*/
+	text-align: left;
+	position: relative;
+}
+
+.skill_text h5 {
+	color: lightgrey;
+	opacity: 0.5;
+	font-size: 85%;
+	position: relative;
+}
+
+/* ----------------------Right Side----------------------*/
+
+.container .right_side {
+	position: relative;
+	background: #fff;
+	/*padding 5px;*/ /*affects toolbar*/
+	color: black;
+	font-family: Times New Roman;
+	border-bottom-right-radius: 40px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/* ----------------------About me----------------------*/
+
+.right_side .about_me_text {
+	color: black;
+	padding: 15px;
+}
+
+.about_me_text p{
+	margin: 0;
+
+}
+
+/* ----------------------Experience text----------------------*/
+
+.right_side .exp_text {
+	color: black;
+	padding: 15px;
+	margin: 0;
+}
+
+.exp_text h1 {
+	margin: 0;
+}
+
+.exp_text h2 {
+	margin: 0;
+	
+}
+
+
+.exp_text h3 {
+	margin: 0;
+	text-align: right;
+	padding-right: 30px;
+}
+
+/* ----------------------Projects text----------------------*/
+
+
+
+.right_side .projects_text {
+	color: black;
+	padding-bottom: 15px;
+	margin: 0;
+	padding-top: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.right_side .cont {
+	color: black;
+	padding: 15px;
+}
+
+/* ----------------------Nav bar----------------------*/
+
+.navbar {
+	background-color: #336FC9;
+	overflow: hidden;
+	margin: 0;
+	
+
+}
+
+
+.navbar a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold
+
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+
+/*
+
+/* Add a color to the active/current link */
+
+/*
+.navbar a.active {
+	background-color: #3399ff;
+	color: white;
+}
+
+*/
